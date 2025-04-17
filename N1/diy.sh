@@ -22,7 +22,7 @@ sed -i 's/192.168.1.1/192.168.2.8/g' package/base-files/files/bin/config_generat
 sed -i 's/os.date()/os.date("%Y-%m-%d %H:%M:%S %A")/g' $(find ./package/*/autocore/files/ -type f -name "index.htm")
 
 # 修改主机名
-sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
+sed -i 's/ImmortalWrt/N1/g' package/base-files/files/bin/config_generate
 
 
 # Clean packages

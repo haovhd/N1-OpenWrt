@@ -107,13 +107,13 @@ jobs:
         ENABLE_WIFI_K510: 0
 
     - name: Upload firmware to release
-      uses: softprops/action-gh-release@master
-      if: ${{ env.PACKAGED_STATUS == 'success' }} && !cancelled()
+      uses: softprops/action-gh-release@v1
+      if: env.PACKAGED_STATUS == 'success' && !cancelled()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: OpenWrt_${{ env.PACKAGED_OUTPUTDATE }}
-        files: ${{ env.PACKAGED_OUTPUTPATH }}/*.img.xz
+        tag_name: openwrt_${{ env.PACKAGED_OUTPUTDATE }}
+        files: ${{ env.PACKAGED_OUTPUTPATH }}/*
         body: |
           首次使用建议全新刷写
           * 基本信息

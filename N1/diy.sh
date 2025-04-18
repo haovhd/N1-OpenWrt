@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Add packages
-git clone https://github.com/ophub/luci-app-amlogic --depth=1 clone/amlogic
+#git clone https://github.com/ophub/luci-app-amlogic --depth=1 clone/amlogic
 #git clone https://github.com/xiaorouji/openwrt-passwall --depth=1 clone/passwall
 
 # Update packages

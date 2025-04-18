@@ -100,10 +100,9 @@ jobs:
         GZIP_IMGS: .xz
         SCRIPT_DIY_PATH: N1/mk_s905d_n1.sh
         WHOAMI: hao133
+        OPENWRT_VER: $(date +"%Y.%m.%d")
         SW_FLOWOFFLOAD: 0
-        HW_FLOWOFFLOAD: 0
         SFE_FLOW: 0
-        ENABLE_WIFI_K504: 0
         ENABLE_WIFI_K510: 0
 
     - name: Upload firmware to release

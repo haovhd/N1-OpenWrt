@@ -17,8 +17,8 @@ git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 # => OpenClash
 rm -rf feeds/luci/applications/luci-app-openclash
-#git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
-merge_package https://github.com/vernesong/OpenClash OpenClash/luci-app-openclash
+git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
+#merge_package https://github.com/vernesong/OpenClash OpenClash/luci-app-openclash
 
 # 修改默认IP
 sed -i 's/192.168.1.1/192.168.2.8/g' package/base-files/files/bin/config_generate

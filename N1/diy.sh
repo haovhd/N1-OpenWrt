@@ -22,10 +22,6 @@ git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
 
 # => Open-nikki
 git clone https://github.com/nikkinikki-org/OpenWrt-nikki -b main package/nikki
-echo "CONFIG_PACKAGE_luci-app-nikki=y" >> .config
-echo "CONFIG_PACKAGE_luci-i18n-nikki-zh-cn=y" >> .config
-./scripts/feeds update -a
-./scripts/feeds install luci-app-nikki
 
 # 修改默认IP
 sed -i 's/192.168.1.1/192.168.2.8/g' package/base-files/files/bin/config_generate

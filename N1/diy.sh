@@ -21,7 +21,7 @@ git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
 #merge_package https://github.com/vernesong/OpenClash OpenClash/luci-app-openclash
 
 # => Open-nikki
-git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki -b main package/nikki
+git clone https://github.com/nikkinikki-org/OpenWrt-nikki -b main package/nikki
 echo "CONFIG_PACKAGE_luci-app-nikki=y" >> .config
 echo "CONFIG_PACKAGE_luci-i18n-nikki-zh-cn=y" >> .config
 ./scripts/feeds update -a

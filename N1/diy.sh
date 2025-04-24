@@ -20,6 +20,9 @@ rm -rf feeds/luci/applications/luci-app-openclash
 git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
 #merge_package https://github.com/vernesong/OpenClash OpenClash/luci-app-openclash
 
+# => Open-nikki
+git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki.git package/OpenWrt-nikki
+
 # 修改默认IP
 sed -i 's/192.168.1.1/192.168.2.8/g' package/base-files/files/bin/config_generate
 
